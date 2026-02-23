@@ -1,0 +1,10 @@
+[package]
+name = "neura-kernel"
+description = "Linux kernel abstraction layer for NeuraOS"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+tokio = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }

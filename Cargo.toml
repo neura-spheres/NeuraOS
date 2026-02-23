@@ -1,0 +1,107 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/neura-kernel",
+    "crates/neura-storage",
+    "crates/neura-users",
+    "crates/neura-security",
+    "crates/neura-process",
+    "crates/neura-services",
+    "crates/neura-logging",
+    "crates/neura-network",
+    "crates/neura-ai-core",
+    "crates/neura-shell",
+    "crates/neura-desktop",
+    "crates/neura-app-framework",
+    "crates/neura-apps",
+    "crates/neura-pkg",
+    "crates/neura-config",
+    "crates/neura-plugins",
+    "crates/neuraos",
+]
+
+[workspace.package]
+version = "0.0.1"
+edition = "2024"
+authors = ["NeuraOS Team"]
+license = "MIT"
+rust-version = "1.85"
+repository = "https://github.com/neura-spheres/NeuraOS"
+description = "AI-native CLI operating system powered by Mira"
+readme = "README.md"
+keywords = ["tui", "cli", "operating-system", "ai", "terminal", "mira"]
+categories = ["command-line-interface", "command-line-utilities"]
+
+[workspace.dependencies]
+# Async runtime
+tokio = { version = "1", features = ["full"] }
+
+# Database
+rusqlite = { version = "0.32", features = ["bundled"] }
+
+# Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "0.8"
+
+# TUI
+ratatui = "0.29"
+crossterm = "0.28"
+
+# HTTP
+reqwest = { version = "0.12", features = ["json", "stream"] }
+
+# Email
+lettre = { version = "0.11", default-features = false, features = ["smtp-transport", "tokio1-native-tls", "builder"] }
+imap = "2"
+native-tls = "0.2"
+mailparse = "0.16"
+
+# Audio playback
+rodio = { version = "0.17", features = ["mp3", "flac", "vorbis"] }
+
+# Audio metadata
+lofty = "0.22"
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+tracing-appender = "0.2"
+
+# Crypto
+argon2 = "0.5"
+rand = "0.8"
+sha2 = "0.10"
+ed25519-dalek = { version = "2", features = ["rand_core"] }
+
+# Error handling
+thiserror = "2"
+anyhow = "1"
+
+# Time
+chrono = { version = "0.4", features = ["serde"] }
+
+# UUID
+uuid = { version = "1", features = ["v4", "serde"] }
+
+# Async channels
+tokio-stream = "0.1"
+futures = "0.3"
+
+# Internal crates
+neura-kernel = { path = "crates/neura-kernel" }
+neura-storage = { path = "crates/neura-storage" }
+neura-users = { path = "crates/neura-users" }
+neura-security = { path = "crates/neura-security" }
+neura-process = { path = "crates/neura-process" }
+neura-services = { path = "crates/neura-services" }
+neura-logging = { path = "crates/neura-logging" }
+neura-network = { path = "crates/neura-network" }
+neura-ai-core = { path = "crates/neura-ai-core" }
+neura-shell = { path = "crates/neura-shell" }
+neura-desktop = { path = "crates/neura-desktop" }
+neura-app-framework = { path = "crates/neura-app-framework" }
+neura-apps = { path = "crates/neura-apps" }
+neura-pkg = { path = "crates/neura-pkg" }
+neura-config = { path = "crates/neura-config" }
+neura-plugins = { path = "crates/neura-plugins" }

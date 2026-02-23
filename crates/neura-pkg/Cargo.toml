@@ -1,0 +1,18 @@
+[package]
+name = "neura-pkg"
+description = "Package manager: install, remove, update, dependency resolution for NeuraOS"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+neura-kernel = { workspace = true }
+neura-storage = { workspace = true }
+neura-security = { workspace = true }
+neura-network = { workspace = true }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+chrono = { workspace = true }
+uuid = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }

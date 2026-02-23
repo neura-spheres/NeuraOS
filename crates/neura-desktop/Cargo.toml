@@ -1,0 +1,19 @@
+[package]
+name = "neura-desktop"
+description = "TUI desktop environment: window manager, status bar, workspaces for NeuraOS"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+neura-kernel = { workspace = true }
+neura-process = { workspace = true }
+neura-app-framework = { workspace = true }
+neura-shell = { workspace = true }
+tokio = { workspace = true }
+ratatui = { workspace = true }
+crossterm = { workspace = true }
+serde = { workspace = true }
+uuid = { workspace = true }
+chrono = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }

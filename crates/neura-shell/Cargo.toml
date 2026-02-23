@@ -1,0 +1,19 @@
+[package]
+name = "neura-shell"
+description = "Shell parser, command executor, builtins, pipes, and scripting for NeuraOS"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+neura-kernel = { workspace = true }
+neura-storage = { workspace = true }
+neura-process = { workspace = true }
+neura-ai-core = { workspace = true }
+neura-users = { workspace = true }
+neura-app-framework = { workspace = true }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+chrono = { workspace = true }

@@ -1,0 +1,33 @@
+[package]
+name = "neuraos"
+description = "NeuraOS - AI-Native CLI Operating System"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "neuraos"
+path = "src/main.rs"
+
+[dependencies]
+tokio = { workspace = true }
+tracing = { workspace = true }
+anyhow = { workspace = true }
+neura-kernel = { workspace = true }
+neura-storage = { workspace = true }
+neura-users = { workspace = true }
+neura-security = { workspace = true }
+neura-process = { workspace = true }
+neura-services = { workspace = true }
+neura-logging = { workspace = true }
+neura-network = { workspace = true }
+neura-ai-core = { workspace = true }
+neura-shell = { workspace = true }
+neura-desktop = { workspace = true }
+ratatui = { workspace = true }
+crossterm = { workspace = true }
+neura-app-framework = { workspace = true }
+neura-apps = { workspace = true }
+neura-pkg = { workspace = true }
+neura-config = { workspace = true }
+neura-plugins = { workspace = true }
+serde_json = { workspace = true }

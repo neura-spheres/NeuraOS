@@ -1,0 +1,15 @@
+[package]
+name = "neura-network"
+description = "Network abstraction layer: HTTP, WebSocket, SMTP, IMAP, TCP for NeuraOS"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+neura-app-framework = { workspace = true }
+tokio = { workspace = true }
+reqwest = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+futures = { workspace = true }

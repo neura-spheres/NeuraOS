@@ -1,0 +1,21 @@
+[package]
+name = "neura-app-framework"
+description = "Application trait, lifecycle management, sandboxing, and per-app config for NeuraOS"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+neura-kernel = { workspace = true }
+neura-storage = { workspace = true }
+neura-security = { workspace = true }
+neura-ai-core = { workspace = true }
+tokio = { workspace = true }
+ratatui = { workspace = true }
+crossterm = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+uuid = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+anyhow = { workspace = true }
+chrono = { workspace = true }

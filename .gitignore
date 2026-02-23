@@ -1,0 +1,12 @@
+/target/
+**/*.rs.bk
+.env
+*.db
+*.db-journal
+*.db-wal
+logs/
+.idea/
+.vscode/
+.DS_Store
+.claude/
+Thumbs.db

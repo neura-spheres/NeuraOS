@@ -1,0 +1,16 @@
+[package]
+name = "neura-storage"
+description = "Virtual filesystem, SQLite database, and persistence layer for NeuraOS"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+neura-kernel = { workspace = true }
+tokio = { workspace = true }
+rusqlite = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+chrono = { workspace = true }
+uuid = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }

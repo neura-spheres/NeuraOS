@@ -1,0 +1,17 @@
+[package]
+name = "neura-plugins"
+description = "Plugin loader, extension registry, and runtime loading for NeuraOS"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+neura-kernel = { workspace = true }
+neura-storage = { workspace = true }
+neura-security = { workspace = true }
+neura-ai-core = { workspace = true }
+neura-app-framework = { workspace = true }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }

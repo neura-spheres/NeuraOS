@@ -1,0 +1,17 @@
+[package]
+name = "neura-security"
+description = "Permission engine, sandboxing, and cryptographic operations for NeuraOS"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+neura-kernel = { workspace = true }
+neura-storage = { workspace = true }
+neura-users = { workspace = true }
+tokio = { workspace = true }
+serde = { workspace = true }
+sha2 = { workspace = true }
+ed25519-dalek = { workspace = true }
+rand = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
